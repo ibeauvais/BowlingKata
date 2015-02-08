@@ -1,5 +1,6 @@
 package bowling;
 
+import java.util.Deque;
 import java.util.LinkedList;
 
 public class Bowling {
@@ -8,7 +9,7 @@ public class Bowling {
             throw new IllegalArgumentException("Frame cannot be > 10");
         }
 
-        LinkedList<Score> scores = new LinkedList<>();
+        Deque<Score> scores = new LinkedList<>();
 
         for (int i = frames.length - 1; i >= 0; i--) {
             Frame frame = frames[i];
